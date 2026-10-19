@@ -1,268 +1,362 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan | Game Designer & 3D Artist</title>
-    <link rel="stylesheet" href="./CSS/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ==========================================================
+       TÍTULO Y SEO  ·  EDITAR
+       ========================================================== -->
+  <title>Fenrir Snow · Game Designer & 3D Artist</title>
+  <meta name="description"
+    content="Portafolio multidisciplinario de Fenrir Snow: ilustración, modelado 3D, impresión 3D y dirección creativa en Unravel Vision.">
+  <meta name="author" content="Fenrir Snow">
+  <!-- Cómo se ve el enlace al compartirlo en redes (EDITAR) -->
+  <meta property="og:title" content="Fenrir Snow · Portafolio multidisciplinario">
+  <meta property="og:description" content="Ilustración, 3D e impresión 3D. Dirección creativa en Unravel Vision.">
+  <meta property="og:type" content="website">
 
-    
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Hoja de estilos compartida por TODO el sitio -->
+  <link rel="stylesheet" href="./CSS/estilos.css">
 </head>
+
 <body>
 
-    <main>
-<section class="hero">
-  <div class="hero-content">
-    <h1 class="hero-title">FENRIR<br>SNOW</h1>
-    <p class="hero-role">GAME DESIGNER & 3D ARTIST</p>
-    <p class="hero-description">
-     Diseñador de videojuegos y artista 3D enfocado en experiencias inmersivas, dirección visual y desarrollo de mundos interactivos.
-Combino game design, narrativa visual y diseño digital para crear proyectos con identidad propia.
-    </p>
-    <div class="hero-actions">
-      <a href="#" class="btn-primary">VER PROYECTOS</a>
-      <a href="#" class="btn-secondary">CONTACTAR <span class="arrow">↗</span></a>
-    </div>
-  </div>
-
-  <div class="hero-visual">
-    <div class="visual-container">
-      <div class="visual-frame"></div>
-      
-      <img src="./assets/imagenes/mini yo .png" alt="Fenrir Snow Character" class="visual-img">
-    </div>
-  </div>
-</section>
-        </main>
-
-        <section class="studio">
-  <div class="studio-container">
-    <div class="studio-info">
-      <span class="studio-tag">UNRAVEL Vision</span>
-      <h2 class="studio-title">
-        IDEAS QUE SE CONVIERTEN <br>
-        <span class="highlight">EN EXPERIENCIAS.</span>
-      </h2>
-      <p class="studio-description">
-        Unravel Vision es mi estudio creativo y el punto central de gran parte de mi trabajo.
-A través de él desarrollo proyectos relacionados con diseño de videojuegos, experiencias inmersivas, visualización 3D y dirección creativa.
-Funciona como un espacio de exploración donde las ideas evolucionan desde conceptos iniciales hasta experiencias visuales e interactivas completas.
-      </p>
-      <a href="#" class="btn-outline">
-        CONOCE MÁS 
-        <svg viewBox="0 0 24 24" fill="none" class="arrow-icon"><path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <!-- ==========================================================
+       ENCABEZADO / NAVEGACIÓN
+       Este mismo bloque se repite en todas las páginas.
+       Para marcar la página actual añade la clase "activo" al enlace.
+       ========================================================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera-inner">
+      <a class="marca" href="./index.html">
+        <span class="marca-nombre">FENRIR SNOW</span>
+        <span class="marca-sub">Game Designer &amp; 3D Artist</span>
       </a>
+
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a class="activo" href="./index.html">Inicio</a>
+        <a href="./ilustracion.html">Ilustración</a>
+        <a href="./3d.html">3D</a>
+        <a href="./unravel-vision.html">Unravel Vision</a>
+        <a href="./index.html#contacto">Contacto</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="studio-visual">
-      <div class="logo-backdrop">
-        <div class="grid-circle"></div>
-        <div class="glow-core"></div>
-        <div class="studio-logo-container">
-          <img src="./assets/imagenes/Logo Unravel.png" alt="Unravel Studio Logo" class="studio-logo-img">
-        </div>
-      </div>
-      <div class="studio-brand">
-        <span class="brand-name">UNRAVEL</span>
-        <span class="brand-sub">Vision</span>
-      </div>
-    </div>
-  </div>
-</section>
+  <main>
 
-<section class="skills">
-  <div class="skills-header">
-    <span class="skills-tag">CAPACIDADES TÉCNICAS</span>
-    <h2 class="skills-main-title">HABILIDADES & DESEMPEÑO</h2>
-  </div>
-
-  <div class="skills-grid">
-    <div class="skill-card">
-      <div class="skill-image-overlay"></div>
-      <div class="skill-content">
-        <h3>GAME DESIGN</h3>
-        <ul class="skill-list">
-          <li>Diseño de mecánicas</li>
-          <li>Sistemas de juego</li>
-          <li>Documentación GDD</li>
-          <li>Diseño de experiencia</li>
-          <li>Prototipado conceptual</li>
-        </ul>
-      </div>
-      <div class="skill-plus">+</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-image-overlay"></div>
-      <div class="skill-content">
-        <h3>3D & VISUAL DEVELOPMENT</h3>
-        <ul class="skill-list">
-          <li>Modelado 3D</li>
-          <li>Hard surface</li>
-          <li>Entornos y props</li>
-          <li>Rendering</li>
-          <li>Concept visualization</li>
-        </ul>
-      </div>
-      <div class="skill-plus">+</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-image-overlay"></div>
-      <div class="skill-content">
-        <h3>CREATIVE DIRECTION</h3>
-        <ul class="skill-list">
-          <li>Branding de proyectos</li>
-          <li>Identidad visual</li>
-          <li>Dirección estética</li>
-          <li>Presentación conceptual</li>
-          <li>Worldbuilding</li>
-        </ul>
-      </div>
-      <div class="skill-plus">+</div>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-image-overlay"></div>
-      <div class="skill-content">
-        <h3>INTERACTIVE EXPERIENCES</h3>
-        <ul class="skill-list">
-          <li>VR</li>
-          <li>Experiencias inmersivas</li>
-          <li>Eventos interactivos</li>
-          <li>Interfaces</li>
-          <li>Proyectos experimentales</li>
-        </ul>
-      </div>
-      <div class="skill-plus">+</div>
-    </div>
-  </div>
-</section>
-
-
-<section class="projects">
-  <div class="projects-header">
-    <span class="projects-tag">PORTAFOLIO</span>
-    <h2 class="projects-main-title">PROYECTOS DESTACADOS</h2>
-  </div>
-
-  <div class="projects-grid">
-    
-    <div class="project-item">
-      <input type="checkbox" id="modal-echoes" class="modal-logic">
-      
-      <label for="modal-echoes" class="project-card">
-        <div class="project-img-container">
-          <img src="./assets/imagenes/casa1.png" alt="Echoes">
-        </div>
-        <div class="project-info">
-          <h3>ECHOES</h3>
-          <p>Prototipo de aventura en mundo abierto</p>
-        </div>
-      </label>
-
-      <div class="modal-overlay">
-        <div class="modal-container">
-          <label for="modal-echoes" class="modal-close">&times;</label>
-          <div class="modal-content-layout">
-            <div class="modal-gallery">
-              <img src="./assets/imagenes/casa2.png">
-              <img src="./assets/imagenes/casa3.png">
-            </div>
-            <aside class="modal-details">
-              <h2 class="details-title">ECHOES</h2>
-              <p class="details-description">Detalles técnicos de Echoes...</p>
-            </aside>
+    <!-- ========================================================
+         SECCIÓN HERO  ·  "#inicio"
+         ======================================================== -->
+    <section class="hero" id="inicio">
+      <div class="contenedor hero-inner">
+        <div class="hero-texto">
+          <span class="etiqueta">PORTAFOLIO MULTIDISCIPLINARIO</span>
+          <h1 class="hero-titulo">FENRIR<br>SNOW</h1>
+          <p class="hero-rol">Game Designer · 3D Artist · Director Creativo</p>
+          <p class="hero-descripcion">
+            <!-- EDITAR: texto de presentación -->
+            Soy diseñador multidisciplinario, titulado en Diseño de Videojuegos y con formación técnica en Programación. 
+            Cuento con experiencia en modelado e impresión 3D, ilustración y diseño UX/UI, complementada con certificaciones 
+            en administración y diseño digital. Como cofundador de Unravel Vision SpA, integro creatividad, diseño y tecnología 
+            para desarrollar soluciones visuales, digitales e interactivas.
+          </p>
+          <div class="hero-acciones">
+            <a class="boton boton-primario" href="#areas">VER ÁREAS</a>
+            <a class="boton boton-fantasma" href="#contacto">
+              CONTACTAR
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
           </div>
         </div>
-        <label for="modal-echoes" class="modal-backdrop-close"></label>
-      </div>
-    </div>
 
-    <div class="project-item">
-      <input type="checkbox" id="modal-aureum" class="modal-logic">
-      
-      <label for="modal-aureum" class="project-card">
-        <div class="project-img-container">
-          <img src="tu-imagen-aureum.jpg" alt="Project Aureum">
-        </div>
-        <div class="project-info">
-          <h3>PROJECT AUREUM</h3>
-          <p>Experiencia narrativa en desarrollo</p>
-        </div>
-      </label>
-
-      <div class="modal-overlay">
-        <div class="modal-container">
-          <label for="modal-aureum" class="modal-close">&times;</label>
-          <div class="modal-content-layout">
-            <div class="modal-gallery">
-              <img src="aureum-1.jpg">
-            </div>
-            <aside class="modal-details">
-              <h2 class="details-title">PROJECT AUREUM</h2>
-              <p class="details-description">Detalles de Aureum...</p>
-            </aside>
+        <div class="hero-visual">
+          <div class="marco-visual">
+            <div class="marco-fondo"></div>
+            <div class="marco-glow" aria-hidden="true"></div>
+            <!-- Reutilizada del diseño anterior -->
+            <img class="marco-img" src="./assets/imagenes/mini yo .png" alt="Retrato ilustrado de Fenrir Snow">
           </div>
         </div>
-        <label for="modal-aureum" class="modal-backdrop-close"></label>
       </div>
-    </div>
+    </section>
 
-    <div class="project-item">
-      <input type="checkbox" id="modal-clinic" class="modal-logic">
-      
-      <label for="modal-clinic" class="project-card">
-        <div class="project-img-container">
-          <img src="tu-imagen-clinic.jpg" alt="The Clinic VR">
-        </div>
-        <div class="project-info">
-          <h3>THE CLINIC VR</h3>
-          <p>Simulador de entrenamiento médico</p>
-        </div>
-      </label>
+    <!-- ========================================================
+         SECCIÓN SOBRE MÍ  ·  "#sobre-mi"
+         ======================================================== -->
+    <section class="seccion" id="sobre-mi">
+      <div class="contenedor">
+        <header class="seccion-cabecera">
+          <span class="etiqueta">QUIÉN SOY</span>
+          <h2 class="seccion-titulo">PERFIL &amp; TRAYECTORIA</h2>
+        </header>
 
-      <div class="modal-overlay">
-        <div class="modal-container">
-          <label for="modal-clinic" class="modal-close">&times;</label>
-          <div class="modal-content-layout">
-            <div class="modal-gallery">
-              <img src="clinic-1.jpg">
+        <div class="sobre-grid">
+
+          <!-- ---------- BIO ---------- -->
+          <article class="panel panel-bio">
+            <h3 class="panel-titulo">Sobre mí</h3>
+            <!-- EDITAR: biografía. Deja el mismo formato párrafo a párrafo. -->
+            <p class="texto-tenue">
+              Diseñador multidisciplinario enfocado en crear soluciones visuales, 
+              digitales e interactivas. Combino creatividad, pensamiento técnico y gestión para llevar ideas desde el concepto hasta su desarrollo.
+            </p>
+            
+
+            <!-- Enlaces de contacto rápido (EDITAR los href) -->
+            <div class="bio-enlaces">
+              <a class="enlace-chip" href="#">[CORREO]</a>
+              <a class="enlace-chip" href="https://www.instagram.com/fenrirsnow3d?utm_source=ig_web_button_share_sheet&obrf=ZDNlZDc0MzIxNw==">[INSTAGRAM]</a>
+              <a class="enlace-chip" href="alan_snow.artstation.com">[ARTSTATION]</a>
+              <a class="enlace-chip" href="www.linkedin.com/in/alan-avila-01b0aa36a">[LINKEDIN]</a>
             </div>
-            <aside class="modal-details">
-              <h2 class="details-title">THE CLINIC VR</h2>
-              <p class="details-description">Detalles de la clínica...</p>
-            </aside>
+          </article>
+
+          <!-- ---------- ESTUDIOS ---------- -->
+          <article class="panel">
+            <h3 class="panel-titulo">Estudios</h3>
+            <ul class="lista-items">
+
+              <!-- ============================================
+                   PLANTILLA DE ESTUDIO — copia este <li> completo
+                   para añadir otro estudio.
+                   ============================================ -->
+              <li class="item">
+                <span class="item-fecha">2016 - 2019</span>
+                <span class="item-titulo"> Tecnico en nivel medio de Programación</span>
+                <span class="item-sub">Liceo Comercial</span>
+              </li>
+              <li class="item">
+                <span class="item-fecha">2020 - 2022</span>
+                <span class="item-titulo">Técnico en diseño de videojuegos</span>
+                <span class="item-sub">Santo Tomás</span>
+              </li>
+              <li class="item">
+                <span class="item-fecha">2026</span>
+                <span class="item-titulo">Diseño de Experiencia de Usuario (UX) y de Interfaz (UI) </span>
+                <span class="item-sub">Talento Digital para Chile - SENCE</span>
+              </li>
+              <!-- ============ FIN PLANTILLA ESTUDIO ============ -->
+
+            </ul>
+          </article>
+
+          <!-- ---------- LOGROS ---------- -->
+          <article class="panel">
+            <h3 class="panel-titulo">Logros</h3>
+            <ul class="lista-items">
+
+              <!-- ============================================
+                   PLANTILLA DE LOGRO — copia este <li> completo
+                   ============================================ -->
+              <li class="item">
+                <span class="item-fecha">2025</span>
+                <span class="item-titulo">Cofundador de Unravel Vision SpA</span>
+                <span class="item-sub">Creación de una empresa enfocada en innovación, gamificación y tecnologías interactivas.</span>
+              </li>
+              <!-- ============ FIN PLANTILLA LOGRO ============ -->
+
+            </ul>
+          </article>
+        </div>
+
+        <!-- ---------- CERTIFICADOS ---------- -->
+        <div class="certificados">
+          <div class="certificados-cabecera">
+            <h3 class="panel-titulo">Certificados</h3>
+            <p class="texto-tenue texto-menudo">[EDITAR: estos recuadros son los espacios de imagen de cada certificado.]</p>
+          </div>
+          <div class="certificados-grid">
+
+            <!-- ============================================
+                 PLANTILLA DE CERTIFICADO — copia este bloque
+                 ============================================ -->
+            <figure class="certificado">
+              <!-- Cuando tengas la imagen sustituye el <div class="slot"> por:
+                   <img src="./assets/imagenes/MI-CERTIFICADO.jpg" alt="Nombre del certificado"> -->
+              <div class="slot"><span><img src="./assets/imagenes/logosantotomas.png"></span></div>
+              <figcaption>
+                <strong>Técnico Profesional en Diseño de Videojuegos</strong>
+                <span class="texto-menudo">2022</span>
+              </figcaption>
+            </figure>
+            <figure class="certificado">
+              <div class="slot"><span><img src="./assets/imagenes/logocomercial.jpg"></span></div>
+              <figcaption>
+                <strong>Técnico Medio Programación</strong>
+                <span class="texto-menudo">2020</span>
+              </figcaption>
+            </figure>
+            <figure class="certificado">
+              <div class="slot"><span>IMAGEN DEL CERTIFICADO</span></div>
+              <figcaption>
+                <strong>[NOMBRE DEL CERTIFICADO]</strong>
+                <span class="texto-menudo">[EMISOR · AÑO]</span>
+              </figcaption>
+            </figure>
+            <!-- ============ FIN PLANTILLA CERTIFICADO ============ -->
+
           </div>
         </div>
-        <label for="modal-clinic" class="modal-backdrop-close"></label>
       </div>
+    </section>
+
+    <!-- ========================================================
+         SECCIÓN ÁREAS  ·  "#areas"
+         Resumen visual de las disciplinas. Cada tarjeta lleva a su
+         página. No se rompe si añades o quitas tarjetas.
+         ======================================================== -->
+    <section class="seccion seccion-alt" id="areas">
+      <div class="contenedor">
+        <header class="seccion-cabecera">
+          <span class="etiqueta">ÁREAS DE TRABAJO</span>
+          <h2 class="seccion-titulo">UN PORTAFOLIO, TRES MUNDOS</h2>
+          <p class="texto-tenue">[EDITAR: una frase breve que resuma tus áreas.]</p>
+        </header>
+
+        <div class="areas-grid">
+
+          <!-- ---------- ÁREA: ILUSTRACIÓN ---------- -->
+          <a class="area-card" href="./ilustracion.html">
+            <div class="area-media">
+              <!-- Sustituye este <div> por tu imagen de portada cuando la tengas -->
+              <div class="slot"><span>IMAGEN DE PORTADA · ILUSTRACIÓN</span></div>
+            </div>
+            <div class="area-info">
+              <h3>ILUSTRACIÓN</h3>
+              <p>Ilustración infantil y piezas de estilo oscuro / extraño.</p>
+              <span class="enlace-flecha">EXPLORAR →</span>
+            </div>
+          </a>
+
+          <!-- ---------- ÁREA: 3D ---------- -->
+          <a class="area-card" href="./3d.html">
+            <div class="area-media">
+              <img src="./assets/imagenes/casa1.png" alt="Render 3D de un interior">
+            </div>
+            <div class="area-info">
+              <h3>3D</h3>
+              <p>Props para videojuegos, contenido audiovisual e impresión 3D.</p>
+              <span class="enlace-flecha">EXPLORAR →</span>
+            </div>
+          </a>
+
+          <!-- ---------- ÁREA: UNRAVEL VISION ---------- -->
+          <a class="area-card" href="./unravel-vision.html">
+            <div class="area-media area-media-logo">
+              <img src="./assets/imagenes/Logo Unravel.png" alt="Logotipo de Unravel Vision">
+            </div>
+            <div class="area-info">
+              <h3>UNRAVEL VISION</h3>
+              <p>Estudio creativo y proyecto principal. Dirección creativa y operaciones.</p>
+              <span class="enlace-flecha">EXPLORAR →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECCIÓN UNRAVEL VISION DESTACADA  ·  "#unravel"
+         ======================================================== -->
+    <section class="seccion destacado" id="unravel">
+      <div class="contenedor destacado-inner">
+        <div class="destacado-texto">
+          <span class="etiqueta">PROYECTO PRINCIPAL</span>
+          <h2 class="seccion-titulo">IDEAS QUE SE CONVIERTEN<br><span class="resaltado">EN EXPERIENCIAS.</span></h2>
+          <p class="texto-tenue">
+            <!-- EDITAR / AMPLIAR -->
+            Unravel Vision es mi estudio creativo y el punto central de gran parte de mi trabajo. A través de él
+            desarrollo proyectos relacionados con diseño de videojuegos, experiencias inmersivas, visualización 3D y
+            dirección creativa. Funciona como un espacio de exploración donde las ideas evolucionan desde conceptos
+            iniciales hasta experiencias visuales e interactivas completas.
+          </p>
+
+          <!-- Roles dentro de la empresa -->
+          <ul class="roles">
+            <li>Cofundador</li>
+            <li>Director de Operaciones</li>
+            <li>Administrador</li>
+            <li>Director Creativo</li>
+          </ul>
+
+          <a class="boton boton-contorno" href="./unravel-vision.html">
+            CONOCE UNRAVEL VISION
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="destacado-visual">
+          <div class="orbita">
+            <div class="orbita-rejilla" aria-hidden="true"></div>
+            <div class="orbita-glow" aria-hidden="true"></div>
+            <img src="./assets/imagenes/Logo Unravel.png" alt="Logotipo de Unravel Vision">
+          </div>
+          <div class="destacado-marca">
+            <span class="destacado-nombre">UNRAVEL</span>
+            <span class="destacado-sub">Vision</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SECCIÓN CONTACTO  ·  "#contacto"
+         ======================================================== -->
+    <section class="seccion seccion-alt" id="contacto">
+      <div class="contenedor contacto-inner">
+        <span class="etiqueta">CONTACTO</span>
+        <h2 class="seccion-titulo">¿TRABAJAMOS JUNTOS?</h2>
+        <p class="texto-tenue max-600">
+          <!-- EDITAR: llamada a la acción -->
+          [ESCRIBE AQUÍ UNA FRASE INVITANDO A CONTACTARTE.]
+        </p>
+
+        <div class="contacto-acciones">
+          <!-- EDITAR: pon tu correo real en el href (mailto:) y el texto -->
+          <a class="boton boton-primario" href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+          <a class="boton boton-fantasma" href="#">[REDES SOCIALES]</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       PIE DE PÁGINA  ·  EDITAR los enlaces
+       ========================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie-inner">
+      <span class="texto-menudo">© <span id="anio">2026</span> Fenrir Snow · Unravel Vision</span>
+      <nav class="pie-nav" aria-label="Navegación del pie">
+        <a href="./index.html">Inicio</a>
+        <a href="./ilustracion.html">Ilustración</a>
+        <a href="./3d.html">3D</a>
+        <a href="./unravel-vision.html">Unravel Vision</a>
+      </nav>
     </div>
+  </footer>
 
-  </div> </section>
-
-
-
-
+  <!-- JavaScript compartido por TODO el sitio -->
+  <script src="./JS/principal.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

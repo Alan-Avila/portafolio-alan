@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D · Fenrir Snow</title>
+  <meta name="description" content="Modelado 3D: props para videojuegos, contenido audiovisual e impresión 3D.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================
+       ENCABEZADO / NAVEGACIÓN (igual en todas las páginas)
+       ========================================================== -->
+  <header class="cabecera">
+    <div class="contenedor cabecera-inner">
+      <a class="marca" href="./index.html">
+        <span class="marca-nombre">FENRIR SNOW</span>
+        <span class="marca-sub">Game Designer &amp; 3D Artist</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+        aria-controls="menu-principal">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="menu-principal" aria-label="Navegación principal">
+        <a href="./index.html">Inicio</a>
+        <a href="./ilustracion.html">Ilustración</a>
+        <a class="activo" href="./3d.html">3D</a>
+        <a href="./unravel-vision.html">Unravel Vision</a>
+        <a href="./index.html#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========================================================
+         CABECERA DE SECCIÓN
+         ======================================================== -->
+    <section class="cabecera-seccion">
+      <div class="contenedor">
+        <span class="etiqueta">DISCIPLINA 02</span>
+        <h1 class="pagina-titulo">MODELADO 3D</h1>
+        <p class="texto-tenue max-700">
+          <!-- EDITAR: descripción de esta disciplina -->
+          [ESCRIBE AQUÍ UNA INTRODUCCIÓN A TU TRABAJO 3D: software que usas, tipo de piezas, flujo de trabajo,
+          impresión 3D...]
+        </p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         FILTROS  ·  las categorías deben coincidir con
+         data-categoria="..." de cada tarjeta.
+         ======================================================== -->
+    <section class="seccion seccion-compacta">
+      <div class="contenedor">
+        <div class="filtros" role="group" aria-label="Filtrar proyectos 3D">
+          <button class="filtro activo" type="button" data-filtro="todos">TODOS</button>
+          <button class="filtro" type="button" data-filtro="props">PROPS PARA VIDEOJUEGOS</button>
+          <button class="filtro" type="button" data-filtro="audiovisual">CONTENIDO AUDIOVISUAL</button>
+          <button class="filtro" type="button" data-filtro="impresion">IMPRESIÓN 3D</button>
+        </div>
+
+        <div class="grid-proyectos" id="grid-proyectos">
+
+          <!-- ==================================================
+               PLANTILLA DE PROYECTO (igual que en Ilustración)
+               CÓMO AÑADIR UN PROYECTO:
+               1) Copia TODO este bloque <article> y pégalo debajo.
+               2) Rellena los textos entre corchetes [ ... ].
+               3) data-categoria: props | audiovisual | impresion
+               4) IMAGEN: cambia <img src="..."> por tu render.
+               5) VIDEO: dentro de .tarjeta-detalle puedes pegar un
+                  <iframe> de YouTube/Vimeo. Si usas varias imágenes,
+                  ponlas todas dentro de .tarjeta-media.
+               NOTA: las imágenes casa1–casa4 son DEMO, reemplázalas.
+               ================================================== -->
+          <article class="tarjeta" data-categoria="props" data-categoria-nombre="Props para videojuegos">
+            <button class="tarjeta-boton" type="button">
+              <div class="tarjeta-media">
+                <img src="./assets/imagenes/casa1.png" alt="Render 3D de un dormitorio (imagen de ejemplo)">
+              </div>
+              <div class="tarjeta-info">
+                <span class="tarjeta-cat">Props para videojuegos</span>
+                <h3 class="tarjeta-titulo">[TÍTULO DEL PROYECTO]</h3>
+                <p class="tarjeta-resumen">[UNA LÍNEA DE DESCRIPCIÓN]</p>
+              </div>
+            </button>
+            <div class="tarjeta-detalle" hidden>
+              <p>[DESCRIPCIÓN LARGA: contexto, software, poligonaje, texturizado, año...]</p>
+              <div class="tarjeta-galeria">
+                <img src="./assets/imagenes/casa2.png" alt="Detalle del proyecto (imagen de ejemplo)">
+                <img src="./assets/imagenes/casa3.png" alt="Detalle del proyecto (imagen de ejemplo)">
+              </div>
+              <div class="slot slot-video"><span>ENLACE DE VIDEO O IMAGEN ADICIONAL</span></div>
+            </div>
+          </article>
+          <!-- ============ FIN PLANTILLA PROYECTO ============ -->
+
+          <article class="tarjeta" data-categoria="audiovisual" data-categoria-nombre="Contenido audiovisual">
+            <button class="tarjeta-boton" type="button">
+              <div class="tarjeta-media">
+                <img src="./assets/imagenes/casa4.png" alt="Render 3D de un interior (imagen de ejemplo)">
+              </div>
+              <div class="tarjeta-info">
+                <span class="tarjeta-cat">Contenido audiovisual</span>
+                <h3 class="tarjeta-titulo">[TÍTULO DEL PROYECTO]</h3>
+                <p class="tarjeta-resumen">[UNA LÍNEA DE DESCRIPCIÓN]</p>
+              </div>
+            </button>
+            <div class="tarjeta-detalle" hidden>
+              <p>[DESCRIPCIÓN LARGA DEL PROYECTO.]</p>
+              <div class="slot slot-video"><span>ENLACE DE VIDEO (YouTube / Vimeo)</span></div>
+            </div>
+          </article>
+
+          <article class="tarjeta" data-categoria="impresion" data-categoria-nombre="Impresión 3D">
+            <button class="tarjeta-boton" type="button">
+              <div class="tarjeta-media">
+                <div class="slot"><span>IMAGEN DEL PROYECTO</span></div>
+              </div>
+              <div class="tarjeta-info">
+                <span class="tarjeta-cat">Impresión 3D</span>
+                <h3 class="tarjeta-titulo">[TÍTULO DEL PROYECTO]</h3>
+                <p class="tarjeta-resumen">[UNA LÍNEA DE DESCRIPCIÓN]</p>
+              </div>
+            </button>
+            <div class="tarjeta-detalle" hidden>
+              <p>[DESCRIPCIÓN LARGA: pieza impresa, material, escala, post-procesado...]</p>
+              <div class="slot slot-video"><span>IMAGEN O VIDEO DE LA PIEZA IMPRESA</span></div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="grid-vacio" id="grid-vacio" hidden>Aún no hay proyectos en esta categoría.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================
+       PIE DE PÁGINA
+       ========================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie-inner">
+      <span class="texto-menudo">© <span id="anio">2026</span> Fenrir Snow · Unravel Vision</span>
+      <nav class="pie-nav" aria-label="Navegación del pie">
+        <a href="./index.html">Inicio</a>
+        <a href="./ilustracion.html">Ilustración</a>
+        <a href="./3d.html">3D</a>
+        <a href="./unravel-vision.html">Unravel Vision</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- POP-UP DE DETALLE (se rellena solo) -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-fondo" data-cerrar></div>
+    <div class="modal-caja" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+      <button class="modal-cerrar" type="button" data-cerrar aria-label="Cerrar">&times;</button>
+      <div class="modal-media" id="modal-media"></div>
+      <div class="modal-info">
+        <span class="modal-cat" id="modal-cat"></span>
+        <h2 class="modal-titulo" id="modal-titulo"></h2>
+        <div class="modal-detalle" id="modal-detalle"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./JS/principal.js"></script>
+</body>
+
+</html>
